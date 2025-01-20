@@ -10,7 +10,7 @@ function App() {
 
 
   let [speed, setSpeed] = useState<number>(0);
-  let [segments, setSegments] = useState<Segment[]>([{ name: "Seg 1", start: 0, stop: 30 }, { name: "Seg 2", start: 20, stop: 60 }]);
+  let [segments, setSegments] = useState<Segment[]>([{ name: "Segment 1", start: 0, stop: 30 }, { name: "Segment 2", start: 20, stop: 60 }]);
 
   const preset1 = {
     "mainseg": 0,
