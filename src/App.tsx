@@ -10,7 +10,7 @@ function App() {
 
 
   let [speed, setSpeed] = useState<number>(0);
-  let [segments, setSegments] = useState<Segment[]>([{ name: "Segment 1", start: 0, stop: 30 }, { name: "Segment 2", start: 20, stop: 60 }]);
+  let [segments, setSegments] = useState<Segment[]>([{ name: "Segment 0", start: 0, stop: 30 }, { name: "Segment 1", start: 20, stop: 60 }]);
 
   const preset1 = {
     "mainseg": 0,
@@ -73,7 +73,6 @@ function App() {
       c2: 128,
       c3: 16,
       sel: true,
-      rev: false,
       mi: false,
       o1: false,
       o2: false,
@@ -108,7 +107,6 @@ function App() {
       c2: 128,
       c3: 16,
       sel: true,
-      rev: false,
       mi: false,
       o1: false,
       o2: false,
@@ -169,7 +167,7 @@ function App() {
   let addNewSegment = () => {
     let lastSegment = segments[segments.length - 1];
     let newSegment: Segment = {
-      name: `Segment ${segments.length + 1}`,
+      name: `Segment ${segments.length}`,
       start: lastSegment.stop,
       stop: lastSegment.stop + 30
     };
